@@ -1,56 +1,48 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-After initialization, but before game start.
-  File "game/screens.rpy", line 288, in analyze_screen
-    screen navigation():
-  File "game/screens.rpy", line 288, in analyze
-    screen navigation():
-  File "game/screens.rpy", line 288, in analyze
-    screen navigation():
-  File "game/screens.rpy", line 290, in analyze
-    vbox:
-  File "game/screens.rpy", line 290, in analyze
-    vbox:
-  File "game/screens.rpy", line 293, in analyze
-    if main menu:
-SyntaxError: unexpected EOF while parsing (game/screens.rpy, line 293)
+Compiling ATL code at game/script.rpy:31
+  File "game/script.rpy", line 27, in script
+    show lachlanfish:
+  File "game/script.rpy", line 31, in <module>
+    
+NameError: name 'tilt' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\bootstrap.py", line 275, in bootstrap
-    renpy.main.main()
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\main.py", line 670, in main
-    run(restart)
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\main.py", line 85, in run
-    renpy.display.screen.analyze_screens()
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\screen.py", line 973, in analyze_screens
-    s.ast.analyze_screen()
-  File "game/screens.rpy", line 288, in analyze_screen
-    screen navigation():
-  File "game/screens.rpy", line 288, in analyze
-    screen navigation():
-  File "game/screens.rpy", line 288, in analyze
-    screen navigation():
-  File "game/screens.rpy", line 290, in analyze
-    vbox:
-  File "game/screens.rpy", line 290, in analyze
-    vbox:
-  File "game/screens.rpy", line 293, in analyze
-    if main menu:
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\py3analysis.py", line 558, in is_constant_expr
-    node, literal = ccache.ast_eval_literal(expr)
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\py3analysis.py", line 790, in ast_eval_literal
-    expr = py_compile(expr, 'eval', ast_node=True)
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\python.py", line 1088, in py_compile
-    raise e
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\python.py", line 1034, in py_compile
-    raise orig_e
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\python.py", line 1027, in py_compile
-    tree = compile(source, filename, py_mode, ast.PyCF_ONLY_AST | flags, 1)
-SyntaxError: unexpected EOF while parsing (game/screens.rpy, line 293)
+  File "game/script.rpy", line 27, in script
+    show lachlanfish:
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 1428, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 1391, in show_imspec
+    renpy.config.show(name,
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\exports.py", line 759, in show
+    sls.add(layer, img, key, zorder, behind, at_list=at_list, name=name, atl=atl, default_transform=default_transform, transient=transient)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\core.py", line 1277, in add
+    thing.visit_all(lambda d : None)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\core.py", line 671, in visit_all
+    for d in self.visit():
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\atl.py", line 669, in visit
+    block = self.compile()
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\atl.py", line 573, in compile
+    block = self.atl.compile(self.context)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\atl.py", line 788, in compile
+    statements = [ i.compile(ctx) for i in self.statements ]
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\atl.py", line 788, in <listcomp>
+    statements = [ i.compile(ctx) for i in self.statements ]
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\atl.py", line 1099, in compile
+    child = ctx.eval(expr)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\atl.py", line 277, in eval
+    return renpy.python.py_eval(expr, locals=self.context)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\python.py", line 1153, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\python.py", line 1146, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 31, in <module>
+    
+NameError: name 'tilt' is not defined
 
 Windows-10-10.0.22621 AMD64
 Ren'Py 8.1.1.23060707
 Rewriting HIStory 1.0
-Sat Aug  5 16:03:04 2023
+Sat Aug  5 22:15:07 2023
