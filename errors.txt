@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/screens.rpy", line 298: the yalign keyword argument was not given a value.
+    yalign
+          ^
+
+Ren'Py Version: Ren'Py 8.1.1.23060707
+Sat Aug  5 19:19:35 2023
