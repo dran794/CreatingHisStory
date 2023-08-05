@@ -11,8 +11,16 @@ define n = Character("Narrator", color = "#797777")
 
 # The game starts here.
 
-label start:
+label intro:
+    image run:
+        "images/splashscreen1.png"
+        pause 1.0
+        "images/splashscreen2.png"
+        pause 1.0
+        "images/splashscreen3.png"
+        pause 1.0
 
+label start:
 
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the
