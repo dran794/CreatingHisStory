@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 298: the yalign keyword argument was not given a value.
-    yalign
-          ^
+File "game/chapterApe.rpy", line 20: end of line expected.
+    scene bg forest.png
+                   ^
 
 Ren'Py Version: Ren'Py 8.1.1.23060707
-Sat Aug  5 19:19:35 2023
+Sat Aug  5 23:23:56 2023
