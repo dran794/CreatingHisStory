@@ -1,28 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/chapterApe.rpy", line 8, in script
-    define l = Character(plyrName)
-  File "game/chapterApe.rpy", line 8, in <module>
-    define l = Character(plyrName)
-NameError: name 'plyrName' is not defined
+  File "game/prologue.rpy", line 7, in script
+    define char = Character(name)
+  File "game/prologue.rpy", line 7, in <module>
+    define char = Character(name)
+NameError: name 'name' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/chapterApe.rpy", line 8, in script
-    define l = Character(plyrName)
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 2508, in execute
+  File "game/prologue.rpy", line 7, in script
+    define char = Character(name)
+  File "C:\Users\Enrique\Downloads\renpy-8.1.1-sdk\renpy\ast.py", line 2508, in execute
     self.set()
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 2522, in set
+  File "C:\Users\Enrique\Downloads\renpy-8.1.1-sdk\renpy\ast.py", line 2522, in set
     value = renpy.python.py_eval_bytecode(self.code.bytecode)
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\python.py", line 1146, in py_eval_bytecode
+  File "C:\Users\Enrique\Downloads\renpy-8.1.1-sdk\renpy\python.py", line 1146, in py_eval_bytecode
     return eval(bytecode, globals, locals)
-  File "game/chapterApe.rpy", line 8, in <module>
-    define l = Character(plyrName)
-NameError: name 'plyrName' is not defined
+  File "game/prologue.rpy", line 7, in <module>
+    define char = Character(name)
+NameError: name 'name' is not defined
 
 Windows-10-10.0.22621 AMD64
 Ren'Py 8.1.1.23060707
 Rewriting HIStory 1.0
-Sun Aug  6 03:12:45 2023
+Sun Aug  6 10:11:12 2023

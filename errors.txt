@@ -2,9 +2,7 @@
 errors listed below, and try again.
 
 
-File "game/chapterApe.rpy", line 7: expected statement.
-    plyrName player_name = renpy.input("What is your name, Magical Boy?")
-                         ^
+File "game/chapterFish.rpy", line 21: Indentation mismatch.
 
 Ren'Py Version: Ren'Py 8.1.1.23060707
-Sun Aug  6 03:12:09 2023
+Sun Aug  6 10:37:26 2023

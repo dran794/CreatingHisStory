@@ -5,7 +5,7 @@
 
 
 
-define l = Character(plyrName)
+define l = Character("Lachlan")
 define n = Character("Narrator", color = "#797777")
 
 
