@@ -2,7 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/chapterFish.rpy", line 21: Indentation mismatch.
+File "game/chapterFish.rpy", line 61: expected statement.
+    nar: "Hmm..."
+       ^
+
+File "game/chapterFish.rpy", line 69: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Let's stay in a safe place"
+                                ^
 
 Ren'Py Version: Ren'Py 8.1.1.23060707
-Sun Aug  6 10:37:26 2023
+Sun Aug  6 11:09:11 2023

@@ -6,7 +6,7 @@
 define char = Character("You")
 define nar = Character("Narrator", color = "#797777")
 
-
+default name = "Amos"
 
 
 # The game starts here.

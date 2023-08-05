@@ -19,7 +19,8 @@ label start:
     # images directory to show it.
 
     show bg black with dissolve
-    jump prologue
+    #jump prologue
+    jump chapterFish
     
     scene bg water
 
