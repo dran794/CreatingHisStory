@@ -11,17 +11,9 @@ define n = Character("Narrator", color = "#797777")
 
 # The game starts here.
 
-label intro:
-    image run:
-        "images/splashscreen1.png"
-        pause 1.0
-        "images/splashscreen2.png"
-        pause 1.0
-        "images/splashscreen3.png"
-        pause 1.0
-
 label start:
 
+    stop music
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
@@ -41,7 +33,6 @@ label start:
     # These display lines of dialogue.
 
     l "Hmmm..."
-
     l "I wonder what's on the other side..."
 
     menu:
@@ -63,35 +54,49 @@ label start:
         n "you have to take risks sometimes."
         jump chapterApe
 
-    scene bg sunnyfield:
-        zoom 2
+    label issacnewtie:
+        scene bg sunnyfield:
+            zoom 2
 
-    show issaclachy:
-        xalign 0.1
-        yoffset 300
-        zoom 2
+        show issaclachy:
+            xalign 0.1
+            yoffset 300
+            zoom 2
 
     l "Ah, its hot outside..."
     l "I should find some shade."
 
-    #menu:
-        #n "Where should I go?"
-        #"Under the apple tree":
-            #jump
-        #"Go back home":
-            #jump
+    menu:
+        n "Where should I go?"
+        "Under the apple tree":
+            jump underAppleTree
+        "Go back home":
+            jump newtonHome
         
     label underAppleTree:
-        scene bg appletree
+        scene bg appletree:
+            zoom 1.9
+        show issaclachy:
+            xalign 0.9
+            yoffset 500
+            zoom 1.5
+
+        show apple:
+            xoffset 1350
+            yoffset 250
+    
         l "Ah... this is nice"
+        
         l "GAH DAMN"
         l "Why did this apple fall down?"
-        #jump
+        #jump to presentTime
 
     label newtonHome:
         l "Im tired..."
         l "I'm going to go to bed now."
+        return
 
+    
 
     # This ends the game.
 

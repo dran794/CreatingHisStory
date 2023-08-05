@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 19: expected 'comma or end of line' not found.
-    hide image splashscreen2
-    ^
+File "game/chapterApe.rpy", line 7: expected statement.
+    plyrName player_name = renpy.input("What is your name, Magical Boy?")
+                         ^
 
 Ren'Py Version: Ren'Py 8.1.1.23060707
-Sun Aug  6 02:45:50 2023
+Sun Aug  6 03:12:09 2023

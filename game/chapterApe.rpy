@@ -3,7 +3,9 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define l = Character("Lachlan")
+
+
+define l = Character(plyrName)
 define n = Character("Narrator", color = "#797777")
 
 
@@ -46,12 +48,13 @@ label chapterApe:
         l "I keEp doIng thIs fOr a wHilE!"
 
         n "Sometimes you just make te wrong choice. But we have to live with it."
-        # jump 
+        return
 
     label shaveBody:
         scene bg land
         n "I nO fEel hOt"
         n "you have to take risks somethimes."
+        jump issacnewtie
 
     
 

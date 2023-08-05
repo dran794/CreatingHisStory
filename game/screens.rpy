@@ -323,13 +323,6 @@ screen navigation():
 
             textbutton _("Main Menu") action MainMenu()
 
-        textbutton _("About") action ShowMenu("about")
-
-        if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
-
-            ## Help isn't necessary or relevant to mobile devices.
-            textbutton _("Help") action ShowMenu("help")
-
         if renpy.variant("pc"):
 
             ## The quit button is banned on iOS and unnecessary on Android and
@@ -356,12 +349,11 @@ style navigation_button_text:
 ## https://www.renpy.org/doc/html/screen_special.html#main-menu
 
 screen main_menu():
-
     ## This ensures that any other menu screen is replaced.
     tag menu
 
     add gui.main_menu_background
-
+    
     ## This empty frame darkens the main menu.
     frame:
         style "main_menu_frame"
@@ -371,7 +363,7 @@ screen main_menu():
     use navigation
 
     if gui.show_name:
-
+        
         vbox:
             style "main_menu_vbox"
 
