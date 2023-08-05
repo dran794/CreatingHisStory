@@ -46,7 +46,7 @@ label chapterApe:
         l "I keEp doIng thIs fOr a wHilE!"
 
         n "Sometimes you just make te wrong choice. But we have to live with it."
-        return
+        # jump 
 
     label shaveBody:
         scene bg land

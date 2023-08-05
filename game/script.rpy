@@ -61,7 +61,7 @@ label start:
         scene bg abovewater
         n "In life..."
         n "you have to take risks sometimes."
-        #jump chapterApe
+        jump chapterApe
 
     scene bg sunnyfield:
         zoom 2
