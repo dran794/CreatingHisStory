@@ -12,7 +12,7 @@ default name = "Amos"
 # The game starts here.
 
 label prologue:
-
+    play music "prologue_Music.mp3"
     scene bg black
     
     nar "..."
@@ -33,6 +33,7 @@ label prologue:
 
     menu:
         "Yes":
+            stop music fadeout(1.0)
             jump chapterFish
     # This ends the game.
 
